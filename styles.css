@@ -7,20 +7,20 @@ body {
 }
 
 header {
-    background: SKYBLUE;
+    background: skyblue;
     color: white;
     padding: 20px;
 }
 
 nav ul {
+    display: flex;
+    justify-content: center;
     list-style: none;
     padding: 0;
     background: #444;
-    overflow: hidden;
 }
 
 nav ul li {
-    display: inline;
     padding: 15px;
 }
 
@@ -29,10 +29,11 @@ nav ul li a {
     text-decoration: none;
 }
 
-section {
-    padding: 50px;
+.box {
     background: white;
-    margin: 20px;
+    padding: 30px;
+    margin: 20px auto;
+    width: 80%;
     border-radius: 5px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }

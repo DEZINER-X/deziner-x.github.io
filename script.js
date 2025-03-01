@@ -7,5 +7,5 @@ document.addEventListener("DOMContentLoaded", function () {
         setTimeout(() => {
             document.getElementById("content").style.opacity = "1";
         }, 1000); // Delay to match animation timing
-    }, 2000); // Show fullscreen title for 2 seconds
+    }, 500); // Show fullscreen title for 2 seconds
 });

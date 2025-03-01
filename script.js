@@ -8,5 +8,5 @@ document.addEventListener("DOMContentLoaded", function () {
             intro.style.display = "none"; // Remove it completely after animation
             content.style.opacity = "1"; // Show the main content
         }, 1000); // Delay matching the transition time
-    }, 1000); // Adjust this delay if needed (how long the fullscreen intro stays)
+    }, 500); // Adjust this delay if needed (how long the fullscreen intro stays)
 });

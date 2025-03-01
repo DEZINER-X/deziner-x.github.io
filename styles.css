@@ -16,21 +16,22 @@
     z-index: 1000;
 }
 
-/* When animation ends, move title to the top */
+/* Move intro title to the top after animation */
 #intro.hidden {
-    height: 80px;
-    width: 100%;
-    font-size: 1.5em;
+    height: 60px;
+    line-height: 60px;
+    font-size: 1.8em;
     position: fixed;
     top: 0;
-    left: 0;
-    text-align: center;
+    width: 100%;
     padding: 10px;
     background: skyblue;
+    text-align: center;
+    transition: all 0.8s ease-in-out;
     z-index: 10;
 }
 
-/* Fade-in for page content */
+/* Fade-in effect for page content */
 #content {
     opacity: 0;
     transition: opacity 1s ease-in-out;
@@ -70,7 +71,7 @@ nav ul li a {
     text-decoration: none;
 }
 
-/* Section Styles */
+/* Section Styling */
 section {
     padding: 50px;
     background: white;

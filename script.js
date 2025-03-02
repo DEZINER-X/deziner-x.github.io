@@ -1,23 +1,17 @@
 document.addEventListener("DOMContentLoaded", function () {
     // Title Animation
     setTimeout(() => {
-        const title = document.getElementById("title");
-        title.style.animation = "titleAnimation 3s ease forwards";
-    }, 1000); // Delay before the animation starts
-
-    // Portfolio Image Loading
-    const portfolioImages = [
-        "image1.jpg",
-        "image2.jpg",
-        "image3.jpg"
-    ];
-
-    const portfolioContainer = document.getElementById("portfolio-container");
-
-    portfolioImages.forEach((src, index) => {
-        const img = document.createElement("img");
-        img.src = src;
-        img.alt = `Design ${index + 1}`;
-        portfolioContainer.appendChild(img);
-    });
+        const titleContainer = document.getElementById("title-container");
+        titleContainer.style.animation = "titleAnimation 3s ease forwards";
+    }, 1000);
 });
+
+// Image Popup Functionality
+function openPopup(imageSrc) {
+    document.getElementById("popup").style.display = "flex";
+    document.getElementById("popup-img").src = imageSrc;
+}
+
+function closePopup() {
+    document.getElementById("popup").style.display = "none";
+}

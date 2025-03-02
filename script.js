@@ -1,15 +1,23 @@
 document.addEventListener("DOMContentLoaded", function () {
-    const intro = document.getElementById("intro");
-    const content = document.getElementById("content");
-
+    // Title Animation
     setTimeout(() => {
-        intro.style.transition = "all 1s ease-in-out";
-        intro.style.transform = "translateY(-100%)"; // Moves the intro up smoothly
-        intro.style.opacity = "0";
+        const title = document.getElementById("title");
+        title.style.animation = "titleAnimation 3s ease forwards";
+    }, 1000); // Delay before the animation starts
 
-        setTimeout(() => {
-            intro.style.display = "none"; // Completely remove the intro
-            content.style.opacity = "1";  // Fade in the content
-        }, 1000); // Matches the transition time
-    }, 1500); // Controls how long the intro stays before moving
+    // Portfolio Image Loading
+    const portfolioImages = [
+        "image1.jpg",
+        "image2.jpg",
+        "image3.jpg"
+    ];
+
+    const portfolioContainer = document.getElementById("portfolio-container");
+
+    portfolioImages.forEach((src, index) => {
+        const img = document.createElement("img");
+        img.src = src;
+        img.alt = `Design ${index + 1}`;
+        portfolioContainer.appendChild(img);
+    });
 });

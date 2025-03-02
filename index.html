@@ -3,47 +3,61 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Deziner_X</title>
+    <title>Deziner_X - Graphic Design Services</title>
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <div id="intro">
+    <header>
         <h1>DEZINER_X</h1>
         <p>Creative & Professional Graphic Design Services</p>
-    </div>
-    <nav>
-        <ul>
-            <li><a href="#services">Services</a></li>
-            <li><a href="#portfolio">Portfolio</a></li>
-            <li><a href="#about">About</a></li>
-            <li><a href="#contact">Contact</a></li>
-        </ul>
-    </nav>
-    <section id="services" class="card">
-        <h2>My Services</h2>
-        <ul class="no-bullets">
-            <li>Logo Design</li>
-            <li>Social Media Graphics</li>
-            <li>Posters & Flyers</li>
-            <li>Branding & Business Cards</li>
-            <li>Custom Design Requests</li>
-        </ul>
-    </section>
-    <section id="portfolio" class="card">
-        <h2>Portfolio</h2>
-        <div class="gallery">
-            <img src="design1.jpg" alt="Design 1" class="portfolio-img" onclick="openLightbox('design1.jpg')">
-            <img src="design2.jpg" alt="Design 2" class="portfolio-img" onclick="openLightbox('design2.jpg')">
-            <img src="design3.jpg" alt="Design 3" class="portfolio-img" onclick="openLightbox('design3.jpg')">
+        <nav>
+            <ul>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#portfolio">Portfolio</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    
+    <section id="services">
+        <div class="container">
+            <h2>My Services</h2>
+            <ul>
+                <li>Logo Design</li>
+                <li>Social Media Graphics</li>
+                <li>Posters & Flyers</li>
+                <li>Branding & Business Cards</li>
+                <li>Custom Design Requests</li>
+            </ul>
         </div>
     </section>
-    <section id="contact" class="card">
-        <h2>Contact</h2>
-        <p>Email: <a href="mailto:deziner.x101@gmail.com">deziner.x101@gmail.com</a></p>
+    
+    <section id="portfolio">
+        <div class="container">
+            <h2>Portfolio</h2>
+            <div class="portfolio-grid">
+                <div class="portfolio-item">
+                    <img src="design1.jpg" alt="Design 1">
+                    <p>Design 1</p>
+                </div>
+                <div class="portfolio-item">
+                    <img src="design2.jpg" alt="Design 2">
+                    <p>Design 2</p>
+                </div>
+                <div class="portfolio-item">
+                    <img src="design3.jpg" alt="Design 3">
+                    <p>Design 3</p>
+                </div>
+            </div>
+        </div>
     </section>
-    <div id="lightbox" class="hidden" onclick="closeLightbox()">
-        <img id="lightbox-img" src="" alt="">
-    </div>
-    <script src="script.js"></script>
+    
+    <section id="contact">
+        <div class="container">
+            <h2>Contact</h2>
+            <p>Email: <a href="mailto:deziner.x101@gmail.com">deziner.x101@gmail.com</a></p>
+        </div>
+    </section>
 </body>
 </html>
